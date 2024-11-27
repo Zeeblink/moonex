@@ -1,11 +1,5 @@
 import Navbar from "./Navbar";
-
-const Star = () => (
-  <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M40.4708 0C34.0714 10.8962 30.5357 16.33 26.9708 16.33C23.4058 16.33 19.8701 10.8962 13.5 0C19.8701 10.8962 22.9091 16.6462 21.1266 19.665C19.3442 22.6838 12.7695 23 0 23C13.237 23 19.8117 23.3162 21.3019 26.6512C22.7045 29.7562 19.6656 35.4775 13.5 46C19.8993 35.1037 23.4351 29.67 27 29.67C30.5649 29.67 34.1007 35.1037 40.5 46C33.7208 34.4137 30.7403 28.6637 33.2532 25.7887C35.474 23.2587 42.0195 23 54 23C40.5 23 33.9253 22.655 32.6104 19.1187C31.4123 15.9562 34.4513 10.2638 40.4708 0Z" fill="white" />
-  </svg>
-);
-
+import Star from "./Star";
 
 
 const Hero = () => {
@@ -13,19 +7,18 @@ const Hero = () => {
     <div className="min-h-screen mb-0 relative ">
       {/* Orbital Lines */}
       <div className="absolute inset-0 ">
-        <img 
-          src="./orbital-rings.svg" 
-          alt="orbital-rings" 
+        <img
+          src="./orbital-rings.svg"
+          alt="orbital-rings"
           className="w-full h-full object-cover"
         />
       </div>
-      
+
       {/* Hero lighting effects */}
-      <div className="absolute h-28 w-72 top-16 left-16 blur-[140px] bg-[#EDD955] rounded-full"></div>  
-      <div className="absolute h-20 w-64 top-[30rem] right-28 blur-[170px] bg-[#EDD955] rounded-full"></div>   
+      <div className="absolute h-28 w-72 top-16 left-16 blur-[200px] lg:blur-[140px] bg-[#EDD955] rounded-full"></div>
+      <div className="absolute h-20 w-64 top-[30rem] right-28 blur-[170px] bg-[#EDD955] rounded-full"></div>
 
       {/* Stars */}
-        {/* Stars */}
       <div className="absolute inset-0">
         <div className="absolute top-[170px] left-[190px] w-[61px] h-[60px] scale-75 animate-twinkle">
           <Star />
@@ -41,7 +34,7 @@ const Hero = () => {
       </div>
 
       {/* Main Content */}
-      <div className="h-full relative">
+      <div className="h-[90vh] relative">
         <Navbar />
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-16 py-36 sm:py-40 lg:py-36 space-y-8 lg:space-y-0">
           {/* Hero Text */}
