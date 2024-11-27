@@ -1,0 +1,84 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+    font-family: 'Raleway', fira;
+  }
+
+  .hero-main-text {
+    font-family: 'Neue Machina', sans-serif;
+  }
+
+  .comparison {
+    font-family: 'Conthrax';
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-twinkle {
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+.animate-twinkle-delayed {
+  animation: twinkle 3s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+.animate-orbit {
+  animation: orbit 20s linear infinite;
+}
+
+@layer utilities {
+  .bg-gradient-radial {
+    background-image: radial-gradient(var(--tw-gradient-stops));
+  }
+}
+
+.sphere-gradient {
+  /* Ellipse 14 */
+    position: absolute;
+    width: 300px; /* Adjust width */
+    height: 150px; /* Adjust height */
+    background: radial-gradient(circle, rgba(240, 255, 29, 0.5), transparent);
+    filter: blur(80px);
+    top: 50px; /* Adjust position */
+    left: 100px; /* Adjust position */
+    z-index: 0; /* Ensure it's behind other elements */
+
+}
+
+
