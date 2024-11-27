@@ -61,7 +61,7 @@ const Navbar = () => {
               className="text-white focus:outline-none"
               aria-label="Toggle Menu"
             >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {isMenuOpen ? <X size={24} onClick={toggleMenu} /> : <Menu size={24} />}
             </motion.button>
           </div>
         </div>
@@ -80,9 +80,17 @@ const Navbar = () => {
               flex flex-col items-center 
               justify-center 
               space-y-6 sm:space-y-8
-              overflow-hidden
+              pt-16
             "
           >
+            <motion.button 
+              onClick={toggleMenu}
+              className="absolute top-4 right-4 text-white p-2"
+              whileTap={{ scale: 0.9 }}
+            >
+              <X size={24} />
+            </motion.button>
+
             <div className="flex flex-col items-center space-y-6">
               {navLinks.map((navLink, index) => (
                 <motion.a

@@ -10,9 +10,9 @@ const Star = () => (
 
 const Hero = () => {
   return (
-    <div className="min-h-screen mb-0 relative overflow-hidden">
+    <div className="min-h-screen mb-0 relative ">
       {/* Orbital Lines */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 ">
         <img 
           src="./orbital-rings.svg" 
           alt="orbital-rings" 
@@ -43,7 +43,7 @@ const Hero = () => {
       {/* Main Content */}
       <div className="h-full relative">
         <Navbar />
-        <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-16 py-12 sm:py-16 lg:py-32 space-y-8 lg:space-y-0">
+        <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-16 py-36 sm:py-40 lg:py-36 space-y-8 lg:space-y-0">
           {/* Hero Text */}
           <div className="max-w-3xl text-center lg:text-left pt-4">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 hero-main-text">
@@ -65,7 +65,7 @@ const Hero = () => {
             </div>
           </div>
           {/* Sphere */}
-          <div className="flex-shrink-0 w-36 h-36 sm:w-48 sm:h-48 lg:w-56 lg:h-56 xl:w-62 xl:h-61 relative">
+          <div className="flex-shrink-0 w-36 hidden lg:block h-36 sm:w-48 sm:h-48 lg:w-56 lg:h-56 xl:w-62 xl:h-61 relative">
             <img src="./sphere.svg" alt="Sphere" className="w-full h-full" />
           </div>
         </div>
