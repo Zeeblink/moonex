@@ -4,7 +4,7 @@ import Star from "./Star";
 
 const Hero = () => {
   return (
-    <div className="min-h-screen mb-0 relative ">
+    <div className="min-h-screen mb-0 relative overflow-hidden">
       {/* Orbital Lines */}
       <div className="absolute inset-0 ">
         <img
@@ -28,13 +28,13 @@ const Hero = () => {
             <path d="M40.4708 0C34.0714 10.8962 30.5357 16.33 26.9708 16.33C23.4058 16.33 19.8701 10.8962 13.5 0C19.8701 10.8962 22.9091 16.6462 21.1266 19.665C19.3442 22.6838 12.7695 23 0 23C13.237 23 19.8117 23.3162 21.3019 26.6512C22.7045 29.7562 19.6656 35.4775 13.5 46C19.8993 35.1037 23.4351 29.67 27 29.67C30.5649 29.67 34.1007 35.1037 40.5 46C33.7208 34.4137 30.7403 28.6637 33.2532 25.7887C35.474 23.2587 42.0195 23 54 23C40.5 23 33.9253 22.655 32.6104 19.1187C31.4123 15.9562 34.4513 10.2638 40.4708 0Z" fill="white" />
           </svg>
         </div>
-        <div className="absolute top-[500px] left-[1000px] w-[61px] h-[60px] scale-75 animate-twinkle">
+        <div className="absolute top-[500px] right-[100px] w-[61px] h-[60px] scale-75 animate-twinkle">
           <Star />
         </div>
       </div>
 
       {/* Main Content */}
-      <div className="h-[90vh] relative">
+      <div className="h-full lg:mb-20 relative">
         <Navbar />
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-16 py-36 sm:py-40 lg:py-36 space-y-8 lg:space-y-0">
           {/* Hero Text */}
