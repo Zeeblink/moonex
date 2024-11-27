@@ -18,14 +18,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="px-4 md:px-16 py-4 relative z-50">
+    <nav className="px-4 sm:px-8 lg:px-16 py-4 relative z-50">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <img src="./logo.png" alt="logo" className="h-10" />
+          <img src="./logo.png" alt="logo" className="h-8 sm:h-10" />
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center justify-center flex-grow">
+        <div className="hidden lg:flex items-center justify-center flex-grow">
           {navLinks.map((navLink, index) => (
             <motion.a 
               key={index} 
@@ -33,7 +33,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               className={`
-                mx-4 text-white font-bold 
+                mx-2 xl:mx-4 text-sm xl:text-base text-white font-bold 
                 ${navLink.name === "Home" ? "text-secondary" : ""}
                 hover:text-[#FFD700] 
                 transition-colors
@@ -48,20 +48,20 @@ const Navbar = () => {
           <motion.button 
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="hidden md:block bg-gradient-to-r from-[#E4B40D] to-[#FBD966] text-[#0B1221] px-6 py-2 rounded-full font-semibold hover:opacity-80 transition-opacity"
+            className="hidden lg:block text-sm xl:text-base bg-gradient-to-r from-[#E4B40D] to-[#FBD966] text-[#0B1221] px-4 xl:px-6 py-2 rounded-full font-semibold hover:opacity-80 transition-opacity"
           >
             Connect Wallet
           </motion.button>
 
           {/* Mobile Menu Toggle */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <motion.button 
               onClick={toggleMenu} 
               whileTap={{ scale: 0.9 }}
               className="text-white focus:outline-none"
               aria-label="Toggle Menu"
             >
-              {isMenuOpen ? <X size={24} className="text-white z-10"/> : <Menu size={24} />}
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </motion.button>
           </div>
         </div>
@@ -76,10 +76,11 @@ const Navbar = () => {
             exit={{ opacity: 0 }}
             className="
               fixed inset-0 bg-[#0B1221] bg-opacity-95 
-              md:hidden z-40 
+              lg:hidden z-40 
               flex flex-col items-center 
               justify-center 
-              space-y-8
+              space-y-6 sm:space-y-8
+              overflow-hidden
             "
           >
             <div className="flex flex-col items-center space-y-6">

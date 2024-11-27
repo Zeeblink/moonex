@@ -18,9 +18,9 @@ export default function Faq() {
   ];
 
   return (
-    <section className="min-h-screen p-8">
-      <div className="mx-auto max-w-4xl space-y-8 rounded-lg bg-[#0D1B28] p-8 shadow-lg backdrop-blur-md">
-        <h2 className="text-center text-4xl font-bold text-white">
+    <section className="min-h-screen p-6 sm:p-8">
+      <div className="mx-auto max-w-4xl space-y-6 sm:space-y-8 rounded-lg bg-[#0D1B28] p-6 sm:p-8 shadow-lg backdrop-blur-md">
+        <h2 className="text-center text-3xl sm:text-4xl font-bold text-white">
           <span className="text-[#ffc107]">FAQs</span>
         </h2>
 
@@ -38,8 +38,8 @@ export default function Faq() {
         </Accordion>
       </div>
 
-      <div className="absolute h-20 w-28 top-[145rem] left-0 blur-[120px] bg-[#EDD955]  rounded-full"></div>  
-      <div className="absolute h-20 w-32 top-[132rem] right-0 blur-[140px] bg-[#EDD955]  rounded-full"></div>  
+      <div className="absolute h-20 w-28 top-[145rem] left-0 blur-[120px] bg-[#EDD955] rounded-full"></div>  
+      <div className="absolute h-20 w-32 top-[132rem] right-0 blur-[140px] bg-[#EDD955] rounded-full"></div>  
     </section>
   );
 }

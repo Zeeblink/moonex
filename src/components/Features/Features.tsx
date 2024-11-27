@@ -29,13 +29,13 @@ const features = [
 
 export default function Features() {
   return (
-    <div className="min-h-screen to-[#0f1d30] px-12 py-24">
+    <div className="min-h-screen  px-6 sm:px-12 py-12 sm:py-24">
       <div className="mx-auto max-w-7xl">
-        <h2 className="mb-16 text-center text-5xl font-bold text-white">
+        <h2 className="mb-12 sm:mb-16 text-center text-4xl sm:text-5xl font-bold text-white">
           Our <span className="text-[#ffc107]">Features</span>
         </h2>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}

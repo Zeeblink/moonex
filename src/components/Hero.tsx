@@ -10,7 +10,7 @@ const Star = () => (
 
 const Hero = () => {
   return (
-    <div className="min-h-[850px] mb-0 relative overflow-hidden">
+    <div className="min-h-screen mb-0 relative overflow-hidden">
       {/* Orbital Lines */}
       <div className="absolute inset-0 overflow-hidden">
         <img 
@@ -43,29 +43,29 @@ const Hero = () => {
       {/* Main Content */}
       <div className="h-full relative">
         <Navbar />
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-0 py-20 space-y-10 md:space-y-0 md:py-32">
+        <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-16 py-12 sm:py-16 lg:py-32 space-y-8 lg:space-y-0">
           {/* Hero Text */}
-          <div className="max-w-3xl text-center md:text-left pt-4">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4 hero-main-text">
+          <div className="max-w-3xl text-center lg:text-left pt-4">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 hero-main-text">
               <span className="text-white">Trusted Multi-Chain
                 <br />
                 <span className="text-[#FFD700]">DEX </span> Platform
               </span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-400 mb-8">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-400 mb-6 sm:mb-8 px-4 sm:px-0">
               Trade, earn, and own crypto on the all-in-one multi-chain DEX
             </p>
-            <div className="flex flex-col md:flex-row justify-center md:justify-start space-y-4 md:space-y-0 md:space-x-4">
-              <button className="bg-gradient-to-r from-[#E4B40D] to-[#FBD966] text-[#0B1221] px-8 py-3 rounded-full font-semibold hover:opacity-80 transition-opacity">
+            <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+              <button className="text-sm sm:text-base bg-gradient-to-r from-[#E4B40D] to-[#FBD966] text-[#0B1221] px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-semibold hover:opacity-80 transition-opacity">
                 Connect Wallet
               </button>
-              <button className="border-2 border-[#FFD700] text-[#FFD700] px-8 py-3 rounded-full font-semibold hover:bg-[#FFD700] hover:text-[#0B1221] transition-colors z-10">
+              <button className="text-sm sm:text-base border-2 border-[#FFD700] text-[#FFD700] px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-semibold hover:bg-[#FFD700] hover:text-[#0B1221] transition-colors z-10">
                 Trade Crypto
               </button>
             </div>
           </div>
           {/* Sphere */}
-          <div className="flex-shrink-0 w-48 h-48 md:w-62 md:h-61 relative">
+          <div className="flex-shrink-0 w-36 h-36 sm:w-48 sm:h-48 lg:w-56 lg:h-56 xl:w-62 xl:h-61 relative">
             <img src="./sphere.svg" alt="Sphere" className="w-full h-full" />
           </div>
         </div>
