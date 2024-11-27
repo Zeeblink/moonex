@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav className="px-4 sm:px-8 lg:px-16 py-4 relative z-50">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <img src="./logo.png" alt="logo" className="h-8 sm:h-10" />
+          <img src="./logo.png" alt="logo" className="h-14 sm:h-auto" />
         </div>
 
         {/* Desktop Navigation */}
